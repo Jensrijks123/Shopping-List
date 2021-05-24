@@ -1,6 +1,46 @@
 public class User {
     
-    public String username;
-    public String email;
-    public String wachtwoord;
+    private String username;
+    private String email;
+    private String wachtwoord;
+
+    public void emailChecker() {
+        if (email.contains("@") & email.contains(".")){
+            System.out.println("Goede Email!");
+        } else {
+            System.out.println("Dit is geen geldige email!");
+        }
+    }
+
+    public void usernameChecker() {
+        if (!username.contains("[a-zA-Z]")){
+            System.out.println("Correcte username!");
+        } else {
+            System.out.println("Foute username!");
+        }
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getWachtwoord() {
+        return wachtwoord;
+    }
+
+    public void setWachtwoord(String wachtwoord) {
+        this.wachtwoord = wachtwoord;
+    }
 }
