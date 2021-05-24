@@ -2,6 +2,10 @@ public class Item {
 
     private String itemNaam;
 
+    public Item(String itemNaam) {
+        this.itemNaam = itemNaam;
+    }
+
     public boolean equals(Object obj) {
         boolean gelijkeObjecten = false;
 

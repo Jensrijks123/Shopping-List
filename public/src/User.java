@@ -4,6 +4,12 @@ public class User {
     private String email;
     private String wachtwoord;
 
+    public User(String username, String email, String wachtwoord) {
+        this.username = username;
+        this.email = email;
+        this.wachtwoord = wachtwoord;
+    }
+
     public void emailChecker() {
         if (email.contains("@") & email.contains(".")){
             System.out.println("Goede Email!");

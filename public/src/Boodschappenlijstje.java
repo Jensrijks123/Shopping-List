@@ -7,6 +7,10 @@ public class Boodschappenlijstje {
     private ArrayList<Item> items;
     private ArrayList<User> users;
 
+    public Boodschappenlijstje(String lijsteNaam) {
+        this.lijsteNaam = lijsteNaam;
+    }
+
     public boolean equals(Object obj) {
         boolean gelijkeObjecten = false;
 
